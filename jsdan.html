@@ -6,7 +6,18 @@
 <title>Dan's first and quite possibly only webpage because the h*ck with coding.</title>
 </head>
 <body>
-</head>
+var button = document.querySelector("button");
+var body = document.querySelector("body");
+var isOrange = true;
+
+button.addEventListener("click", function() {
+if(isOrange) {
+    body.style.background = "orange";
+}else {
+    body.style.background = "none";
+}
+isOrange = !isOrange;
+});
 <button>Things I am <em>not</em> interested in.</button>
 <script>
 $("button").click ( function() {

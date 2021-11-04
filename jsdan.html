@@ -6,18 +6,21 @@
 <title>aDan's first and quite possibly only webpage because the h*ck with coding.</title>
 </head>
 <body>
-var button = document.querySelector("button");
-var body = document.querySelector("body");
-var isOrange = true;
-
-button.addEventListener("click", function() {
-if(isOrange) {
-    body.style.background = "orange";
-}else {
-    body.style.background = "none";
+<form>
+<input type="button" id="myButton" value="NO"
+       onclick="Buttontoggle();">
+</form>
+</body>
+<script type="text/javascript">
+function Buttontoggle()
+{
+  var t = document.getElementById("myButton");
+  if(t.value=="YES"){
+      t.value="NO";}
+  else if(t.value=="NO"){
+      t.value="YES";}
 }
-isOrange = !isOrange;
-});
+</script>
 <button>Things I am <em>not</em> interested in.</button>
 <script>
 $("button").click ( function() {

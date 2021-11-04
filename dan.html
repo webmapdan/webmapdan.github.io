@@ -1,15 +1,12 @@
-<!DOCTYPE html>
-<html>
-<body>
+var button = document.querySelector("button");
+var body = document.querySelector("body");
+var isOrange = true;
 
-<h2>aMy First JavaScript</h2>
-
-<button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
-Click me to display Date and Time.</button>
-
-<p id="demo"></p>
-<html><head></head>
-<script type="text/javascript">
-</body>
-</html>
+button.addEventListener("click", function() {
+if(isOrange) {
+    body.style.background = "orange";
+}else {
+    body.style.background = "none";
+}
+isOrange = !isOrange;
+});

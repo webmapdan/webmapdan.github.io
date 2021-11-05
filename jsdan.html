@@ -3,22 +3,21 @@
 <style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </style>
-<title>aDan's first and quite possibly only webpage because the h*ck with coding.</title>
+<title>Dan's first and quite possibly only webpage because the h*ck with coding.</title>
 </head>
 <body>
-<form>
-<input type="button" id="myButton" value="NO"
-       onclick="Buttontoggle();">
-</form>
+<button onclick="Buttontoggle()">Click to Toggle Text</button>
+
+<div id="123">Some Text</div>
 </body>
 <script type="text/javascript">
 function Buttontoggle()
 {
-  var t = document.getElementById("myButton");
-  if(t.value=="YES"){
-      t.value="NO";}
-  else if(t.value=="NO"){
-      t.value="YES";}
+  var t = document.getElementById("123");
+  if(t.innerHTML=="Some Text"){
+      t.innerHTML="Toggled Text";}
+  else{
+      t.innerHTML="Some Text";}
 }
 </script>
 <button>Things I am <em>not</em> interested in.</button>

@@ -12,7 +12,7 @@ body {background-color: red}
 </head>
 <body>
   <div id="headbox" class= "container">
-  <h1>Dan's first and quite possibly only webpage because the h*ck with coding.</h1>
+  <h1>aDan's first and quite possibly only webpage because the h*ck with coding.</h1>
   </div>
   <div id="pgreet" class= "container">
   <p id="greet">Greetings.  You have somehow arrived at my website.  This website exists because I am interested in drawing maps of earth for a living,
@@ -20,11 +20,21 @@ body {background-color: red}
   Means to an end I guess...</p>
   </div>
   <h2>Computer Wizardry!</h2>
-  <button type="button"
-  onclick="document.getElementById('demo').innerHTML = Date()">
-  Click me to display Date and Time.</button>
+  <body>
+  <button onclick="Buttontoggle()">Overrated Button</button>
 
-  <p id="demo"></p>
+  <div id="123">Maybe</div>
+  </body>
+  <script type="text/javascript">
+  function Buttontoggle()
+  {
+    var t = document.getElementById("123");
+    if(t.innerHTML=="Yep"){
+        t.innerHTML="Nope";}
+    else{
+        t.innerHTML="Yep";}
+  }
+  </script>
 <p>This paragraph was copied and pasted because I wanted to see if it would work.  It did.:<blockquote>"Our mortality makes it impossible for our problems to last forever.</blockquote>
 <p>That quote was made up by a quotation generator I found on the internet:</p>
    <a href="https://quotes-generator.com/quotes-generator.php">Get a quote</a>

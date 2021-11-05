@@ -3,11 +3,10 @@
 <style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </style>
-<title>gDan's first and quite possibly only webpage because the h*ck with coding.</title>
+<title>Dan's first and quite possibly only webpage because the h*ck with coding.</title>
 </head>
 <body>
 <button onclick="Buttontoggle()">Overrated Button</button>
- <button onmouseover="over()" id="b1">Hover mouse over me</button>
 <div id="123">Maybe</div>
 </body>
 <script type="text/javascript">
@@ -21,8 +20,12 @@ function Buttontoggle()
 }
 </script>
 <script type="text/javascript">
-       function over()
-       {
-           document.getElementById("b1").value="You have hovered mouse over me";
-       }
-   </script>
+    function over()
+    {
+        document.getElementById("b1").innerHTML="You have hovered mouse over me";
+    }
+</script>
+</head>
+<body>
+<button onmouseover="over()" id="b1">Hover mouse over me</button>
+</body>
